@@ -1,0 +1,23 @@
+
+<%- include("partials/header.ejs")%>
+  <body>
+    
+    <div class="parent">
+      <h1>
+        <% if (locals.BAND_NAME) { %>
+        <span class="bandName">
+        <%=BAND_NAME%>
+        <span>
+      <%  } else { %>
+       WELCOME TO THE BAND NAME GENERATOR
+     <% } %>
+       </h1>
+       <a href="/name">Generate Name</a>
+    </div>
+    
+    
+    <script src="function.js">
+    </script>
+    
+    <%- include("partials/footer.ejs")%>
+  </body>
